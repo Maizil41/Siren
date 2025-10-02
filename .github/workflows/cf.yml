@@ -16,17 +16,7 @@ jobs:
     environment: cf
     steps:
       - uses: actions/checkout@v4
-
-      - name: Wrangler whoami (diagnostic)
-        run: |
-          npx wrangler --version
-          npx wrangler whoami
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-
-      - name: Deploy
+      - name: deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
