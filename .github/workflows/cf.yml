@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    # environment: cf
+    environment: cf
     steps:
       - uses: actions/checkout@v4
 
