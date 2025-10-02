@@ -2,18 +2,31 @@ name = "siren"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
+workers_dev = true
+
+
+routes = [
+  { pattern = "mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "ava.game.naver.com.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "quiz.int.vidio.com.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "graph.instagram.com.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "zaintest.vuclip.com.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "support.zoom.us.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "cache.netflix.com.mutiara-wrt.biz.id", custom_domain = true },
+]
+
 
 [[kv_namespaces]]
 binding = "SIREN"
 id = "532f0301a11345eca863c9988e8b87ba"
-
 [build]
-command = "cargo install worker-build && worker-build --release"
+command = "cargo install -q worker-build && worker-build --release"
 
 [env.dev]
-build = { command = "cargo install worker-build && worker-build --dev" }
+build = { command = "cargo install -q worker-build && worker-build --dev" }
 
 [vars]
-UUID = "f282b878-8711-45a1-8c69-5564172123c1"
-MAIN_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/index.html"
-SUB_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/sub.html"
+UUID = "bbbbbbbb-cccc-4ddd-eeee-ffffffffffff"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/Maizil41/Siren/refs/heads/master/web/index.html"
+SUB_PAGE_URL = "https://raw.githubusercontent.com/Maizil41/Siren/refs/heads/master/web/sub.html"
+LINK_PAGE_URL = "https://raw.githubusercontent.com/Maizil41/Siren/refs/heads/master/web/link.html"
