@@ -6,13 +6,11 @@ workers_dev = true
 
 
 routes = [
-  { pattern = "mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "ava.game.naver.com.mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "quiz.int.vidio.com.mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "graph.instagram.com.mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "zaintest.vuclip.com.mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "support.zoom.us.mutiara-wrt.biz.id", custom_domain = true },
-  { pattern = "cache.netflix.com.mutiara-wrt.biz.id", custom_domain = true },
+  { pattern = "cf-worker.web.id", custom_domain = true },
+  { pattern = "ava.game.naver.com.cf-worker.web.id", custom_domain = true },
+  { pattern = "quiz.int.vidio.com.cf-worker.web.id", custom_domain = true },
+  { pattern = "api24-normal.tiktokv.com.cf-worker.web.id", custom_domain = true },
+  { pattern = "support.zoom.us.cf-worker.web.id", custom_domain = true },
 ]
 
 
