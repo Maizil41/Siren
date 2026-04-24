@@ -4,7 +4,6 @@ compatibility_date = "2024-05-23"
 minify = true
 workers_dev = true
 
-
 routes = [
   { pattern = "cf-worker.web.id", custom_domain = true },
   { pattern = "ava.game.naver.com.cf-worker.web.id", custom_domain = true },
@@ -13,15 +12,9 @@ routes = [
   { pattern = "support.zoom.us.cf-worker.web.id", custom_domain = true },
 ]
 
-
 [[kv_namespaces]]
 binding = "SIREN"
 id = "532f0301a11345eca863c9988e8b87ba"
-[build]
-command = "cargo install -q worker-build && worker-build --release"
-
-[env.dev]
-build = { command = "cargo install -q worker-build && worker-build --dev" }
 
 [vars]
 UUID = "bbbbbbbb-cccc-4ddd-eeee-ffffffffffff"
